@@ -1,0 +1,27 @@
+
+.dashboard-page {
+    padding: 3rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #616161;
+    
+}
+
+.card {
+    width: 345px;
+}
+
+.card-container {
+    display: flex;
+    padding: 1rem;
+}
+
+.card-media {
+    z-index: -1;
+    height: 140px;
+}
+
+.page-message {
+    text-align: center;
+}
