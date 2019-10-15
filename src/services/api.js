@@ -7,6 +7,7 @@ const getQueryString = params => {
 
 const request = params => {
     let method = params.method || 'GET';
+    let crossDomain = true;
     let qs = '';
     let body;
     let headers = params.headers || {
@@ -21,7 +22,7 @@ const request = params => {
 
     let url = params.url + qs;
 
-    return fetch(url, { method, headers, body });
+    return fetch(url, { method, crossDomain, headers, body });
 }
 
 export default {
